@@ -1,0 +1,380 @@
+
+
+* {box-sizing:border-box}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url(img/26102.jpg);
+    background-size: 2100px 1500px;
+}
+
+.header-flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo-wrap{
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+.search-wrap{
+    flex: 3;
+    flex-wrap: nowrap;
+}
+
+form.inputSearchBooks button {
+    width: 20%;
+    margin-left: 6px;
+    padding: 9px;
+    background: #2196F3;
+    color: white;
+    font-size: 14px;
+    border: 1px solid #2196F3;
+    border-radius: 6px;
+    border-left: none;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+form.inputSearchBooks button:hover {
+    background: #0b7dda; /*button*/
+}
+
+form.inputSearchBooks input[type=text] {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    width: 75%;
+    flex-wrap: nowrap;
+}
+
+/* ---------------SLIDESHOW CONTAINER------------- */
+
+.slideshow-container {
+    /* Para centrar la imagen margin: auto; */
+    margin: auto;
+    margin-top: 20px;
+    max-width: 80%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* ---------NAVBAR--------- */
+
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.nav-bar{
+    flex: 2;
+    /* background-color: #cb2d3e; */
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.basket-wrap {
+    flex: 2;
+    /* background-color: red; */
+}
+
+a:hover {
+    color: grey;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 13px;
+}
+
+/* -----------BASKET---------- */
+
+.basket-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+    border-left: 1px solid #eaeaea;
+    
+    color: black;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 13px;
+}
+
+.basket-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.basket-flex > a {
+    text-decoration: none;
+    color: #0b7dda;
+    font-size: 16px;
+}
+
+/* ----------- BOOKS CONTENT ------------ */
+
+.block-wrap{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.block-header {
+    /* border: 1px solid black; */
+    
+    color: black;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 13px;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    color: black;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-size: 13px;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+
+.price {
+    padding: 10px;
+}
+
+/* ------------ FOOTER-QUOTE -------------- */
+
+.footer-quote{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    height: 397px;
+    padding: 140px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(60, 59, 63, 0.3),
+     rgba(96, 92, 60, 0.99)), url(img/background_quote.jpg);
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 26px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+.footer-quote p{
+    font-family: 'Song Myung', serif;
+    font-size: 20px;
+    /* Para centrar el texto <p> */
+    text-align: center;
+}
+
+/* ----------- FOOTER-NEWSLETTER --------------- 
+
+
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;  Prevent inheritance from `body` 
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background-image: url(img/26102.jpg);
+  background-size: 2100px 1500px ;
+  background-repeat: no-repeat;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+   float: right;
+  }
+ }
+
+
+ 
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 4px;
+        padding-right: 4px \9;
+        padding-left: 5px;
+        padding-left: 5px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -29px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }

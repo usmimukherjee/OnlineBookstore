@@ -1,0 +1,140 @@
+/*
+ * Globals
+ */
+
+/* Links */
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+
+form.inputSearchBooks button {
+    width: 20%;
+    margin-left: 6px;
+    padding: 9px;
+    background: #2196F3;
+    color: white;
+    font-size: 14px;
+    border: 1px solid #2196F3;
+    border-radius: 6px;
+    border-left: none;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+form.inputSearchBooks button:hover {
+    background: #0b7dda; /*button*/
+}
+
+form.inputSearchBooks input[type=text] {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    width: 75%;
+    flex-wrap: nowrap;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background-image: url(img/26102.jpg);
+  background-size: 2100px 1500px;
+/*  background-image: url(file:///Users/UsmiMukherjee/Downloads/346199.jpg);
+  background-size: 1200px 700px ;
+  background-repeat: no-repeat;*/
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
