@@ -1,10 +1,10 @@
 # OnlineBookstore
 A bookstore web application 
 
-Dependencies :
+# Dependencies :
   Xampp
 
-Setup
+# Setup
 
 To run this project follow the steps given below :
 
